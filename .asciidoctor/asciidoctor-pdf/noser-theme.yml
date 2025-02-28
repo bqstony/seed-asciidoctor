@@ -1,0 +1,58 @@
+extends: default-for-print
+base:
+  font-size: 11
+  font-family: Helvetica
+  line-height: 1.0
+page:
+  layout: portrait
+  margin: [21mm, 15mm, 21mm, 15mm]
+  size: A4
+  numbering:
+    start-at: toc
+title_page:
+  title-page: true
+  title: '{title}'
+  subtitle: '{subtitle}'  # Untertitel auf der Titelseite  
+  logo:
+    align: center
+    image: image:Logo_668_209.png[pdfwidth=40%]
+    top: 10%
+running-content:
+  start-at: toc
+header:
+  height: 15mm # 0mm deaktiviert den Header
+  vertical-align: bottom
+  line-height: 1.2
+  font-color: 808080
+  recto: &shared_header
+    left:
+      content: image:Logo_668_209.png[pdfwidth=25mm]
+    right:
+      content: ''
+  verso: *shared_header
+footer:
+  height: 15mm
+  line-height: 1.2
+  font-color: 808080
+  recto: &shared_footer
+    left:
+      content: '{document-title}'
+    right:
+      content: 'Seite {page-number} / {page-count}'
+  verso: *shared_footer
+heading:
+  h1-font-size: 15
+  h2-font-size: 14
+  h3-font-size: 13
+  h4-font-size: 12
+  h5-font-size: 11
+  h6-font-size: 11
+code:
+  font-size: 8
+  padding: 1mm
+  border-width: 0.1
+link:
+  font-color: #428BCA
+description-list:
+  term-spacing: 2
+  term-line-height: 1.0

@@ -1,0 +1,60 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "asciidoctor-pdf generation",
+      "command": "asciidoctor-pdf",
+      "detail": "generation of a PDF file from the current open AsciiDoc file",
+      "type": "shell",
+      "args": [
+        "-r",
+        "asciidoctor-diagram",
+        "--safe-mode",
+        "unsafe",
+        "--theme",
+        "${workspaceFolder}/.asciidoctor/asciidoctor-pdf/noser-theme.yml",
+        "-a",
+        "revdate=\"$(date +'%d.%m.%Y')\"",
+        "-a",
+        "plantuml-config=${workspaceFolder}/.asciidoctor/plantuml/plantuml-config.conf",
+        "-a",
+        "imagesoutdir=${workspaceFolder}/.asciidoctor/plantuml/images",
+        "-a",
+        "diagram-cachedir=${workspaceFolder}/.asciidoctor/plantuml/cache",
+        "${file}"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": {
+        "owner": "asciidoc",
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+            "regexp": "^asciidoctor:\\s+(WARNING|ERROR):\\s+(.*):\\s+line\\s+(\\d+):\\s+(.*)$",
+            "column": 0,
+            "severity": 1,
+            "file": 2,
+            "line": 3,
+            "message": 4
+        }
+      }
+    },
+    {
+      "label": "markdown to asciidoc converter",
+      "command": "kramdoc",
+      "detail": "md to adoc",
+      "type": "shell",
+      "args": [
+        "--auto-id-prefix=",
+        "--auto-id-separator=-",
+        "${file}"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "silent"
+      },
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

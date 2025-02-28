@@ -1,0 +1,37 @@
+:doctype: article
+// Enable Titlepage when empty
+:title-page:
+:toc:
+:sectnums:
+:icons: font
+:table-stripes: even
+// Rendert den Verweise inklusive Caption
+:xrefstyle: full
+:pdf-theme: .asciidoctor/asciidoctor-pdf/noser-theme.yml
+// Übersetzungen
+:toc-title: Inhaltsverzeichnis
+:figure-caption: Abbildung
+:table-caption: Tabelle
+:appendix-caption: Anhang
+:section-refsig: Kapitel
+:footnotes-title: Endnote
+:example-caption: Beispiel
+:caution-caption: Achtung
+:important-caption: Wichtig
+:note-caption: Hinweis
+:tip-caption: Tip
+:warning-caption: Warnung
+:example-caption: Beispiel
+:listing-caption: Codeblock
+//PlanUML
+//is relative path :imagesoutdir: .asciidoctor/plantuml/images
+//is relative path :diagram-cachedir: .asciidoctor/plantuml/cache
+//is relative path :plantuml-config: .asciidoctor/plantuml/plantuml-config.conf
+//Rouge source highlighter
+:source-highlighter: rouge
+:source-indent: 2
+//For kramdoc, the conversion handles the links wrong
+// Default to idprefix=_
+:idprefix:
+// Default to idseparator=_
+:idseparator: -

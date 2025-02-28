@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://domain.com/sampleschema_v1.0.0.schema.json",
+  "title": "Beispiel Schema v1.0.0",
+  "description": "Beispiel Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Eindeutige ID"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Zeitpunkt nach ISO-8601"
+    }
+  },
+  "required": [
+    "id",
+    "timestamp"
+  ],
+  "additionalProperties": true
+}

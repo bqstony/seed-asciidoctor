@@ -1,0 +1,182 @@
+= Titel des Dokuments
+:author: Michael Helfenstein
+include::./../.asciidoctor/attributes-settings-de.adoc[]
+
+== Einleitung
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. 
+
+== Ref
+
+- Siehe Referenz mit eigener ID `[#sec-Systemkontext]`: <<sec-Systemkontext>> 
+- oder auch per Konvention mit Text ` < <Systemkontext>>` <<Systemkontext>>.
+- Das sollte auch mit Trennzeichen gehen für `Überschrift mit Trennzeichen` <<Uberschrift-mit-Trennzeichen>>, tut es anscheinend nicht ;(
+
+== Uberschrift mit Trennzeichen
+
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. 
+
+== Image
+Lorem ipsum dolor sit amet <<fig-Image1>>.
+
+.Image1
+image::assets/image1.jpg[Title="", id="fig-Image1", width=200px, pdfwidth=100mm]
+
+=== Qualitätsbaum
+Der folgende <<fig-Qualitätsbaum>> zeigt die Qualitätsmerkmale inklusive Qualitätsszenarien auf. Die relevanten Merkmale sind in der <<tab-ErläuterungQualitätsmerkmale>> aufgeführt und beschrieben inklusive einer Prioritäten Gewichtung. Den Qualitätsmerkmalen sind jeweils die ermittelten Qualitätsszenarien zugewiesen, welche in der <<tab-Qualitätsszenarien>> inklusive einer Prioritäten Gewichtung beschrieben sind.
+
+.Qualitätsbaum
+[plantuml,id="fig-Qualitätsbaum",target=fig-Qualitätsbaum,format="svg"]
+----
+@startmindmap
+<style>
+rootNode {
+   HorizontalAlignment center
+   LineThickness 1.5
+   Shadowing 1.0
+}
+</style>
+
+* **Qualität**\nvon\nSoftware
+** Funktionalität
+***_ Korrektheit
+****_ F01
+***_ Angemessenheit
+****_ <i>aktuell keine Anforderungen</i>
+** Sicherheit
+***_ Nachweisbarkeit
+****_ <i>aktuell keine Anforderungen</i>
+***_ Vertraulichkeit
+****_ <i>aktuell keine Anforderungen</i>
+***_ Integrität
+****_ <i>aktuell keine Anforderungen</i>
+** Zuverlässigkeit
+***_ Verfügbarkeit
+****_ <i>aktuell keine Anforderungen</i>
+***_ Wiederherstellbarkeit
+****_ <i>aktuell keine Anforderungen</i>
+** Effizienz
+***_ Zeitverhalten
+****_ <i>aktuell keine Anforderungen</i>
+***_ Ressourcenverbrauch
+****_ <i>aktuell keine Anforderungen</i>
+** Wartbarkeit
+***_ <i>aktuell keine Anforderungen</i>
+** Benutzbarkeit
+***_ <i>aktuell keine Anforderungen</i>
+** Kompatibilität
+***_ <i>aktuell keine Anforderungen</i>
+** Portabilität
+***_ <i>aktuell keine Anforderungen</i>
+@endmindmap
+----
+
+[NOTE]
+Ich habe mich an der DIN/ISO 25010 orientiert und der Übersetzung von <<githubArc42Quality>>.
+
+.Erläuterung der Qualitätsmerkmale
+[cols="23,68,11", id="tab-ErläuterungQualitätsmerkmale"]
+|===
+|Qualitätsmerkmal |Beschreibung |Priorität
+
+|Funktionalität
+|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+|Hoch
+
+|Sicherheit
+|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+|Hoch
+
+|Zuverlässigkeit 
+|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+|Mittel
+
+|Effizienz
+|Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+|Mittel
+|===
+
+.Qualitätsszenarien
+[cols="8,77,15", id="tab-Qualitätsszenarien"]
+|===
+|ID |Szenario |Gewichtung
+
+|F01
+|Benutzer eingaben müssen innerhalb einer Sekunde verarbeitet sein.
+|Hoch
+
+|===
+
+[#sec-Systemkontext]
+== Systemkontext
+Die folgende <<fig-Systemcontext>> zeigt den fachlichen Systemkontext für das Software Projekt. Die Benutzerrollen oben dargestellt. Die Verbindung eines Akteur zum System ist zudem mit der Multiplizität ergänzt. Im Anschluss werden die mit dem System interagierenden Benutzerrollen und Fremdsysteme erläutert. 
+
+.Systemkontextdiagramm
+[plantuml,pdfwidth=25%,id="fig-Systemcontext",target=fig-Systemcontext,format="png"]
+----
+@startuml
+rectangle "Benutzerrollen" {
+   actor :User:
+}
+
+rectangle Fremdsysteme {
+   node Service1
+   node Service2
+}
+
+[Software] <<system>> as system
+
+:User: -- system : 0..*
+
+Service1 -up- system : 1
+Service2 -up- system : 1..*
+@enduml
+----
+
+User (Benutzer):: 
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+
+Service1 (Fremdsystem)::
+Der Service1
+
+Service2 (Fremdsystem)::
+Der Service2 ... +
+foo bar
+
+== Code
+Siehe <<code-sampleJsonSchema>>.
+
+.JSON Schema von "Sample" v1.0.0
+[[code-sampleJsonSchema]]
+[source,json]
+----
+include::assets/sampleSchema_v1.0.0.schema.json[]
+----
+
+[glossary]
+== Glossar
+Das folgende Glossar enthält die wichtigsten Begriffe, die verwendet werden. Es dient dazu, die Bedeutung der Begriffe zu klären und ein einheitliches Verständnis zu schaffen.
+
+[[PaaS]]PaaS::
+   Abkürzung für "Platform as a Service", eine Cloud-Computing-Dienstleistung, bei der die Cloud-Plattform und die Infrastruktur bereitgestellt werden, um Anwendungen zu entwickeln und zu betreiben.
+
+[bibliography]
+== Quellenverzeichnis
+
+- [[[Zörner]]] Stefan Zörner: Softwarearchitekturen dokumentieren und kommunizieren - Entwürfe, Entscheidungen und Lösungen nachvollziehbar und wirkungsvoll festhalten. 3. Auflage Hanser 2022. 
+- [[[Starke]]] Dr. Gernot Starke: Effektive Softwarearchitekturen - Ein praktischer Leitfaden. 9. Auflage Hanser 2020.
+- [[[ArchitekturTV]]] Eberhard Wolff: software-architektur.tv - Live-Diskussion zu Software-Architektur im Stream. https://software-architektur.tv/, abgerufen am 03.01.2025.
+- [[[Brandolini]]] Alberto Brandolini: Event Storming - The smartest approach to collaboration beyond silo boundaries. https://www.eventstorming.com/, abgerufen am 07.01.2025.
+- [[[githubArc42Quality]]] Dr. Gernot Starke: GitHub arc42 Repository - Qualitätsanforderungen. https://github.com/arc42/quality-requirements/blob/main/src/asciidoc/uebersetzung_q_merkmale.adoc, abgerufen am 09.01.2025.
+- [[[ChatGPT]]] OpenAI: ChatGPT - Sprachmodell zur Unterstützung bei der Ideenfindung. Version Dezember 2024. OpenAI, 2024.
+- [[[JSON-Schema]]] JSON Schema: Eine Spezifikation zur Definition, Validierung und Dokumentation von JSON-Datenstrukturen. https://json-schema.org/, abgerufen am 15.02.2025.
+- [[[semver]]] Semantic Versioning: Eine Spezifikation zur Versionierung von Software. https://semver.org/, abgerufen am 15.02.2025.
+- [[[Azure-Availability-by-Region]]] Microsoft: Azure Availability by Region - Eine Übersicht der Verfügbarkeit von Azure Diensten in den verschiedenen Azure Regionen. https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/table, abgerufen am 15.02.2025.
