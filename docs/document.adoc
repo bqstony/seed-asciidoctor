@@ -120,7 +120,7 @@ Ich habe mich an der DIN/ISO 25010 orientiert und der Übersetzung von <<githubA
 Die folgende <<fig-Systemcontext>> zeigt den fachlichen Systemkontext für das Software Projekt. Die Benutzerrollen oben dargestellt. Die Verbindung eines Akteur zum System ist zudem mit der Multiplizität ergänzt. Im Anschluss werden die mit dem System interagierenden Benutzerrollen und Fremdsysteme erläutert. 
 
 .Systemkontextdiagramm
-[plantuml,pdfwidth=25%,id="fig-Systemcontext",target=fig-Systemcontext,format="png"]
+[plantuml,pdfwidth=25%,id="fig-Systemcontext",target=fig-Systemcontext,format="svg"]
 ----
 @startuml
 rectangle "Benutzerrollen" {

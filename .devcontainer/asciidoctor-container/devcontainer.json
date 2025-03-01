@@ -1,24 +1,30 @@
 {
-    "name": "Asciidoctor",
-    "context": "../..",
-    "dockerFile": "asciidoctor.dockerfile",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "asciidoctor.asciidoctor-vscode",
-                "jebbs.plantuml",
-                "tomoki1207.pdf",
-                "hediet.vscode-drawio"
-            ],
-            "settings": {
-                "asciidoc.asciidoctor_command": "asciidoctor -r asciidoctor-diagram -r rouge",
-                "asciidoc.preview.useEditorStyle": false,
-                "plantuml.jarArgs": ["-config .asciidoctor/plantuml/plantuml-config.conf"],
-                "workbench.editorAssociations": {
-                    "*.draw.io.png": "hediet.vscode-drawio",
-                    "*.drawio.png": "hediet.vscode-drawio"
-                }
-            }
+  "name": "Asciidoctor",
+  "context": "../..",
+  "dockerFile": "asciidoctor.dockerfile",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "asciidoctor.asciidoctor-vscode",
+        "jebbs.plantuml",
+        "hediet.vscode-drawio",
+        "mhutchie.git-graph",
+        "tomoki1207.pdf"
+      ],
+      "settings": {
+        "asciidoc.asciidoctor_command": "asciidoctor -r asciidoctor-diagram -r rouge",
+        "asciidoc.preview.useEditorStyle": false,
+        "asciidoc.preview.fontFamily": "Helvetica",
+        "asciidoc.preview.lineHeight": 1.4,
+        "asciidoc.preview.fontSize": 14.0,
+        "plantuml.jarArgs": [
+          "-config .asciidoctor/plantuml/plantuml-config.conf"
+        ],
+        "workbench.editorAssociations": {
+          "*.draw.io.png": "hediet.vscode-drawio",
+          "*.drawio.png": "hediet.vscode-drawio"
         }
+      }
     }
+  }
 }

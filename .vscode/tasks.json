@@ -29,14 +29,17 @@
       },
       "problemMatcher": {
         "owner": "asciidoc",
-        "fileLocation": ["relative", "${workspaceFolder}"],
+        "fileLocation": [
+          "relative",
+          "${workspaceFolder}"
+        ],
         "pattern": {
-            "regexp": "^asciidoctor:\\s+(WARNING|ERROR):\\s+(.*):\\s+line\\s+(\\d+):\\s+(.*)$",
-            "column": 0,
-            "severity": 1,
-            "file": 2,
-            "line": 3,
-            "message": 4
+          "regexp": "^asciidoctor:\\s+(WARNING|ERROR):\\s+(.*):\\s+line\\s+(\\d+):\\s+(.*)$",
+          "column": 0,
+          "severity": 1,
+          "file": 2,
+          "line": 3,
+          "message": 4
         }
       }
     },
