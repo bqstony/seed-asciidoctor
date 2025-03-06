@@ -2,7 +2,9 @@
 // Enable Titlepage when empty
 :title-page:
 :toc:
+:toclevels: 4
 :sectnums:
+:sectnumlevels: 10
 :icons: font
 :table-stripes: even
 // Rendert den Verweise inklusive Caption
