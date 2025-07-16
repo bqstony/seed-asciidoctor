@@ -9,6 +9,8 @@
       "args": [
         "-r",
         "asciidoctor-diagram",
+        "-r",
+        "asciidoctor-lists",
         "--safe-mode",
         "unsafe",
         "--theme",

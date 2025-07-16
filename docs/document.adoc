@@ -180,3 +180,11 @@ Das folgende Glossar enthält die wichtigsten Begriffe, die verwendet werden. Es
 - [[[JSON-Schema]]] JSON Schema: Eine Spezifikation zur Definition, Validierung und Dokumentation von JSON-Datenstrukturen. https://json-schema.org/, abgerufen am 15.02.2025.
 - [[[semver]]] Semantic Versioning: Eine Spezifikation zur Versionierung von Software. https://semver.org/, abgerufen am 15.02.2025.
 - [[[Azure-Availability-by-Region]]] Microsoft: Azure Availability by Region - Eine Übersicht der Verfügbarkeit von Azure Diensten in den verschiedenen Azure Regionen. https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/table, abgerufen am 15.02.2025.
+
+[appendix]
+== Abbildungsverzeichnis
+list-of::image[]
+
+[appendix]
+== Tabellenverzeichnis
+list-of::table[]
