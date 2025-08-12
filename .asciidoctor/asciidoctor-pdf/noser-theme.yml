@@ -1,7 +1,40 @@
-extends: default-for-print
+extends: default-for-print-with-font-fallbacks
+font:
+  catalog:
+    merge: true
+    # Helvetica alternative with Unicode support
+    NimbusSans:
+      normal: NimbusSans-Regular.ttf
+      italic: NimbusSans-Italic.ttf
+      bold: NimbusSans-Bold.ttf
+      bold_italic: NimbusSans-BoldItalic.ttf
+    # Nimbus Mono PS - Courier alternative, matches NimbusSans family
+    NimbusMonoPS:
+      normal: NimbusMonoPS-Regular.ttf
+      italic: NimbusMonoPS-Italic.ttf
+      bold: NimbusMonoPS-Bold.ttf
+      bold_italic: NimbusMonoPS-BoldItalic.ttf
+    DejaVuSans:
+      normal: DejaVuSans.ttf
+      italic: DejaVuSans-Oblique.ttf
+      bold: DejaVuSans-Bold.ttf
+      bold_italic: DejaVuSans-BoldOblique.ttf
+    NotoSansSymbols2:
+      normal: NotoSansSymbols2-Regular.ttf
+    # Create a alias for internal fallback
+    "M+ 1mn":
+      normal: NimbusSans-Regular.ttf
+      italic: NimbusSans-Italic.ttf
+      bold: NimbusSans-Bold.ttf
+      bold_italic: NimbusSans-BoldItalic.ttf
+  fallbacks:
+  # DejaVu has a wide Unicode coverage
+  - DejaVuSans
+  # Additional Unicode Symbols
+  - NotoSansSymbols2
 base:
   font-size: 11
-  font-family: Helvetica
+  font-family: NimbusSans
   line-height: 1.0
 page:
   layout: portrait
@@ -48,9 +81,14 @@ heading:
   h5-font-size: 11
   h6-font-size: 11
 code:
+#   font-family: NimbusMonoPS
   font-size: 8
   padding: 1mm
   border-width: 0.1
+# codespan:
+#   font-family: NimbusMonoPS
+# conum:
+#   font-family: NimbusMonoPS
 link:
   font-color: #428BCA
 description-list:

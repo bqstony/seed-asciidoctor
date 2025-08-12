@@ -16,6 +16,8 @@
         "--theme",
         "${workspaceFolder}/.asciidoctor/asciidoctor-pdf/noser-theme.yml",
         "-a",
+        "pdf-fontsdir=.asciidoctor/fonts",
+        "-a",
         "revdate=\"$(date +'%d.%m.%Y')\"",
         "-a",
         "plantuml-config=${workspaceFolder}/.asciidoctor/plantuml/plantuml-config.conf",
@@ -23,7 +25,8 @@
         "imagesoutdir=${workspaceFolder}/.asciidoctor/plantuml/images",
         "-a",
         "diagram-cachedir=${workspaceFolder}/.asciidoctor/plantuml/cache",
-        "${file}"
+        "${file}",
+        "-v", "--trace"
       ],
       "group": "build",
       "presentation": {
