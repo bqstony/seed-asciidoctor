@@ -1,0 +1,385 @@
+= Konzept `Projektname`
+:author: Michael Helfenstein
+include::./../.asciidoctor/attributes-settings-de.adoc[]
+:assetspath: assets
+
+== Versionsverlauf
+
+.Versionsverlauf des Dokuments
+[cols="10,~,15,23", id="tab-Versionsliste"]
+|===
+| Version | Beschreibung | Datum | Autor
+
+| 1.0
+| Initial Version
+| 07.08.2025
+| Michael Helfenstein
+|===
+
+== Einleitung
+=== Zweck dieses Dokuments
+
+Dieses Dokument dient dem Aufzeigen der Problemstellung und eines groben Lösungskonzeptes für das Bereitstellen der Applikation `Projektname`. Es wird ein Überblick über die Anforderungen, der aktuellen Lösung und die geplanten Lösung gegeben. Es dient im ersten Schritt zur Klärung der Ziele und Anforderungen an die Applikation so wie zur Kostenabschätzung. Im weiteren Projektverlauf soll es die Grundlage für die Umsetzung der Applikation bilden und wird iterativ angepasst.
+
+`tbd`
+
+[NOTE]
+Dieses Template dient als Grundlage für die Erstellung von Konzeptdokumenten und sollte entsprechend angepasst werden. Feel free to modify it according to your project's needs.
+
+=== Kontaktpersonen
+
+Die <<tab-Kontaktpersonen>> zeigt die Kontaktpersonen der beteiligten Firmen.
+
+.Kontaktpersonen
+[cols="26,23,34,17", id="tab-Kontaktpersonen"]
+|===
+| Rolle/Gruppe | Name | E-Mail | Tel.
+
+| Projektleiter/Kunde +
+`Firma`
+| `tbd`
+| `tbd`
+| `tbd`
+
+| Sales +
+`Firma`
+| `tbd`
+| `tbd`
+| `tbd`
+
+| Software Engineer +
+Noser Engineering AG
+| Michael Helfenstein
+| michael.helfenstein@noser.com
+| +41763858224
+|===
+
+== Ausgangslage
+=== Management Summary
+
+`tbd`
+
+=== Stakeholder
+
+Die <<tab-Stakeholder>> zeigt die Stakeholder der Applikation inklusive ihrer Ziele und Gewichtung. Dadurch ist der Einfluss auf das Projekt sichtbar.
+
+.Stakeholder
+[cols="10,~a,10", id="tab-Stakeholder"]
+|===
+|Stakeholder |Ziele |Gewichtung
+
+|Operator
+|
+`tbd`
+|Hoch
+
+|Installateur
+|
+`tbd`
+|Niedrig
+
+|===
+
+**Legende Gewichtung:**
+[horizontal]
+Hoch:: Der Einfluss auf das Projekt ist hoch zu bewerten
+Mittel:: Signifikanter Einfluss auf das Projekt, der jedoch mit geeigneten Massnahmen entgegen gekommen werden kann.
+Niedrig:: Der Einfluss auf das Projekt ist nur in geringem Maße zu berücksichtigen.
+
+=== Scope-Abgrenzung
+
+Die <<fig-Scope>> zeigt den Scope der Applikation. 
+
+`tbd`
+
+.`Projektname` - Scope
+image::{assetspath}/ProjektnameScope.drawio.png[id="fig-Scope"]
+
+[NOTE]
+====
+Inhalt
+Ihr Produkt mit allen externen Schnittstellen zu (menschlichen und automatisierten) Nachbarn, bzw. Nachbarsystemen
+
+Motivation
+Scope ist der Bereich, den Sie beeinflussen können. Die Umgebung des Produktes, zu dem es sicherlich viele Schnittstellen gibt stellt den Kontext dar. Der Kontext kann (normalerweise) nicht von Ihnen allein entschieden werden, kann aber oft verhandeln werden. Um Klarheit zu gewinnen ist es wichtig beides möglichst zu beschreiben und vor allem die Grenze zwischen den beiden Bereichen zu definieren. req42 empfiehlt Ihnen mit dem Business-Scope zu beginnen und nicht zu früh den Product-Scope einzuschränken.
+====
+
+== Produkt Backlog
+=== User Storys
+
+Die folgende Auflistung in <<tab-UserStorys>> zeigt die identifizierten User Storys für die Applikation, basierend auf den vorhandenen Informationen. Die Anfangsbuchstaben US der Bezeichner (IDs) stehen für **U**ser **S**tory.
+
+.User Storys
+[cols="10,~,10", id="tab-UserStorys"]
+|===
+|ID |Anwendungsfall |Aufwand [PT]
+
+| US01
+| Als <Rolle> möchte ich <Funktionalität> damit <Vorteil>.
+| 0
+
+|===
+
+[NOTE]
+====
+.Inhalt
+Eine geordnete Liste von Product Backlog Items (auf verschiedenem Granularitätsstufen: z.B. Epics, Features und User Storys.) Backlog-Items sollen untereinander priorisiert (besserer Ausdruck: geranked) sein. Die Items mit dem größten Mehrwert bezogen auf den Umsetzungsaufwand sollten sich entsprechend oben im Backlog wiederfinden, um als nächstes umgesetzt zu werden. Was Mehrwert für Sie und Ihre Entwicklung bedeutet müssen Sie explizit festlegen. Die einfachste Ausprägung ist der Business Mehrwert für den Kunden bei Umsetzung der Anforderung.
+
+.Motivation
+Der Scrum Guide definiert: 
+
+„Das Product Backlog ist eine geordnete Liste von allem, von dem bekannt ist, dass es im Produkt enthalten sein soll. Es dient die einzige Anforderungsquelle für alle Änderungen am Produkt. Der Product Owner ist für das Product Backlog, seine Inhalte, den Zugriff darauf und die Reihenfolge der Einträge verantwortlich.
+Ein Product Backlog ist niemals vollständig. Während seiner ersten Entwicklungsschritte zeigt es die anfangs bekannten und am besten verstandenen Anforderungen auf. Das Product Backlog entwickelt sich mit dem Produkt und dessen Einsatz weiter. Es ist dynamisch; es passt sich konstant an, um für das Produkt klar herauszustellen, was es braucht, um seiner Aufgabe angemessen zu sein, im Wettbewerb zu bestehen und den erforderlichen Nutzen zu bieten.“
+====
+
+=== Weitere Anwendungsfälle
+Die folgende Auflistung in <<tab-Anwendungsfälle>> zeigt die identifizierten Anwendungsfälle für die Applikation, basierend auf den vorhandenen Informationen. Die Anfangsbuchstaben AF der Bezeichner (IDs) stehen für **A**nwendungs**F**älle.
+
+.Anwendungsfälle
+[cols="10,~,10", id="tab-Anwendungsfälle"]
+|===
+|ID |User Story |Aufwand [PT]
+
+| AF01
+| Kunde bestellt Artikel: ... inkl. Schritte, Alternativen
+| 0
+
+|===
+
+=== Modelle zur Unterstützung
+
+`tbd`
+
+[NOTE]
+====
+.Inhalt
+Jegliche Art von grafischen Modellen, die das Verständnis (von Zusammenhängen) von Backlog Items erleichtern. Die Diagramme sollten mit Items aus dem Product Backlog verlinkt sein.
+
+.Motivation
+In der agilen Welt hat es sich weit verbreitet, Anforderungen in Form von Epics, Features oder User Storys auf Kärtchen zu schreiben oder in äquivalenter Form in Tools abzulegen.
+
+Trotzdem wird die Kommunikation unter allen Beteiligten manchmal erheblich einfacher, wenn man zusätzlich auch die Hilfsmittel verwendet, die wir in den letzten Jahrzehnten zur Präzisierung der Umgangssprache kennengelernt haben. Scheuen Sie also nicht davor zurück Modelle zu verwenden, wenn sie die Kommunikation fördern.
+
+Keine Angst: diese Modelle müssen nicht perfekt sein. Aber insbesondere mit anwachsender Komplexität (Schleifen oder Fallunterscheidungen) fördert eine grafische Visualisierung der Schritte eines Geschäftsprozesses das Verständnis besser als viele Tickets im System ohne erkennbare Abfolgen und Abhängigkeiten.
+
+.Notationen/Tools
+
+* Flussdiagramme
+* Aktivitätsdiagramme
+* BPMN
+* Zustandsmodelle
+* Datenmodelle
+* UI-Prototypen
+* Mock-ups
+* Wireframes
+
+Einfache Modellierungstools wie Gliffy, Diagrams.Net (früher DrawIO), ......, oder DSLs wie PlantUML, Kroki, ... oder UML-Modellierungstools wie Enterprise Architect, Visual Paradigm, MagicDraw eignen sich zum Erstellen der Modelle. Die Modelle sollten mit Ihren Backlog-Items verlinkt sein (in beide Richtungen)
+
+// .Weiterführende Informationen
+// 
+// Siehe https://docs.req42.de/section-xxx in der online-Dokumentation (auf Englisch!).
+
+_<Diagrammtitel 1:>_. _<hier Diagramm und evtl. Erläuterungen einfügen>_ _<optional: Link zu Epics, Features oder Storys>_
+
+_<Diagrammtitel 2:>_. _<hier Diagramm und evtl. Erläuterungen einfügen>_ _<optional: Link zu Epics, Features oder Storys>_
+
+_<Diagrammtitel 3:>_. _<hier Diagramm und evtl. Erläuterungen einfügen>_ _<optional: Link zu Epics, Features oder Storys>_
+
+ .
+ .
+ .
+
+_<Diagrammtitel n:>_. _<hier Diagramm und evtl. Erläuterungen einfügen>_ _<optional: Link zu Epics, Features oder Storys>_
+
+====
+
+== Qualitätsanforderungen
+=== Qualitätsszenarien
+In der <<tab-Qualitätsszenarien>> sind konkrete ermittelte Qualitätsszenarien für die Applikation aufgeführt. Die Anfangsbuchstaben QZ der Bezeichner (IDs) dstehen für **Q**ualitätss**Z**enarien.
+
+.Qualitätsszenarien
+[cols="10,~a", id="tab-Qualitätsszenarien"]
+|===
+|ID |Szenario
+
+| QZ01
+| _[Quelle] -> Auslöser -> Artefakt (Umgebung) -> Antwort -> [Antwort-Mass] +
+Ein angemeldeter Schach-Polizist ruft über das
+Internet den Bericht zu verdächtigen Spielern auf
+und erhält das Ergebnis innerhalb von 5 Sekunden.
+
+|===
+
+=== Testbarkeit des Codes
+Um die Testbarkeit des Applikation Codes sicherzustellen, gelten folgende Architekturentscheidungen, die es uns ermöglichen, Module isoliert zu testen. Dabei wird ein pragmatischer Ansatz gewählt, der sich auf modulspezifische Tests konzentriert und Klassen nur dann testet, wenn diese sinnvolle Tests zulassen. In/Out Tests sind nicht als nützlich zu erachten.
+
+Eine Zahl für die Testabdeckung ist nicht zu erreichen.
+
+**Die Teststrategie basiert auf der folgenden Vorgehensweise:**
+
+. Baustein Test: Es sollen Unit Tests zu den Baustein Schnittstellen erstellt werden. Dabei sollen ganzheitliche Tests erstellt werden die sowohl den happy path als auch die Edge Cases und Error Cases abdecken.
+
+. Klassen Tests: Es sollen Funktionalitäten von Klassen und Methoden isoliert getestet werden wo dies Mehrwert generiert und einen Nutzen erbracht werden kann, z.B. um Berechnungen oder komplexe Logiken abzusichern.
+
+. Manuelle Testfälle: Sind nicht definiert und werden nicht durchgeführt.
+
+**Continuous Testing während der Entwicklung:**
+
+Während der Entwicklung soll möglichst frühzeitig eine erste lauffähige Alpha Version erstellt werden die auf dem Entwickler Rechner getestet werden kann mit einem Wäge Simulator welcher von COMPANY AG zum Projektstart bereitgestellt wird.
+
+== Lösungsstrategie
+
+=== Einstieg
+
+Es wird eine neue .NET Desktop Applikation mit dem Namen `APPNAME.exe` erstellt. Diese Applikation besteht aus mehreren Bausteinen welche das wiegen eines Zuges ermöglicht. Sie soll auf einem aktuellen Windows 10 oder Windows 11 x64 Betriebsystem installiert werden können, welche auch parallele installation zulässt. Über eine Destkop UI kann der Operator die Applikation bedienen und eine Zug Wäge Ablaufe ausführen. 
+
+Die Applikation wird über eine Konfigurationsdatei pro Installations _Instanz_ `%ProgramData%/APPNAME/{Instanz}/appsettings.json` im JSON Format konfiguriert. Es wird das Options Pattern von .NET verwendet. Alle notwendigen Anlagekonstanten und möglichen Parameter können in dieser Datei konfiguriert werden. Die Konfigurationsparameter werden in camelCase geschrieben.
+
+Weitere Details sind im <<sec-systemkontext>> und <<sec-Bausteinsicht>> beschrieben.
+
+[#sec-systemkontext]
+=== Systemkontext
+
+Die folgende <<fig-SystemContext>> zeigt die Systemumgebung und wie die neue Applikation darin eingebunden wird. Es soll das Zusammenspiel der Komponenten sowie die Schnittstellen aufzeigen. Anschliessend werden die Benutzer, Fremdsysteme und Datenbank kurz beschrieben.
+
+.APPNAME - Systemkontext
+image::{assetspath}/APPNAMESystemkontext.drawio.png[id="fig-SystemContext"]
+
+Operator (Benutzer)::
+Ist der COMPANY Mitarbeiter welcher die Applikation bedient. 
+
+APPNAME (System)::
+Eine Desktop Applikation welche das Wägen von Zügen ermöglicht. 
+
+PDF Export (Ordner)::
+Ein oder mehrere lokale Verzeichnissse dienen als Speicher von unterschiedlichen Dateien. Diese Dateien werden durch den TwinCat Process erstellt und von der APPNAME bereitgestellt.
+
+=== Technologie Entscheidung
+
+In der <<tab-TechnologieEntscheidung>> sind die wichtigsten Technologien aufgeführt, welche für die Umsetzung der APPNAME verwendet werden. Die Tabelle ist aufgeteilt in die Rubriken: Applikation Frameworks, Testing Frameworks und Tools für die Entwicklung. Die Liste ist allenfalls nicht abschliessend die zur Entwicklung notwendig ist. Dies soll bedarfsorientiert bei der Umsetzung weiter verfeinert und mit dem Entwicklerteam iterativ entschieden und dokumentiert werden.
+
+.Technologie Entscheidung und Begründung für APPNAME
+[cols="~,~", id="tab-TechnologieEntscheidung"]
+|===
+|Technologie |Begründung
+
+2+|**Applikation Frameworks**
+
+| .NET 8
+| .NET ist eine Plattform von Microsoft für die Entwicklung von Software für Windows und Linux Systeme. Die APPNAME wird als .NET 8 Konsolen Applikation erstellt und kann daher mit dem SDK Template `Microsoft.NET.Sdk.Worker` für .NET Worker Service im Hintergrund betrieben werden.
+
+| System.CommandLine
+| Die Bibliothek <<appendix_system_commandline_docs>> ist eine Open-Source-Bibliothek von Microsoft, die es Entwicklern ermöglicht, Konsolenanwendungen in .NET zu erstellen. Sie bietet eine einfache Möglichkeit, Befehlszeilenargumente zu analysieren und zu verarbeiten. Diese Bibliothek ist eine Erweiterung der .NET Foundation und ist daher quelloffen und findet eine breite Akzeptanz. (Die Bibliothek ist von Microsoft breit verwendet, obwohl sie noch in preview ist. ETA ist April 2025, siehe https://github.com/dotnet/sdk/pull/46241#issue-2806805271)
+
+| System.Reactive
+| Die Bibliothek <<appendix_system_reactive_github>> eignet sich sehr gut für die Verarbeitung von asynchronen Datenströmen. Diese Bibliothek ist eine Erweiterung der .NET Foundation und ist daher quelloffen und findet eine breite Akzeptanz.
+
+| NLog
+| <<appendix_nlog_web>> ist eine Open-Source-Bibliothek für .NET, die eine flexible und leistungsstarke strukturierte Logging Lösung bietet. Sie ermöglicht es Entwicklern, Protokolle in verschiedenen Formaten zu erstellen und an verschiedene Ziele zu senden, darunter Dateien, Datenbanken, E-Mail und mehr. In diesem Projekt wird mittels NLog ein rolling Logfile erstellt. Endress+Hauser verwendet diese Bibliothek auch in anderen Projekten.
+
+| OPC Foundation .NET Standard
+| <<appendix_opcfoundation_opc_net_library>> ist eine Open-Source-Bibliothek, die es Entwicklern ermöglicht, OPC UA-Anwendungen für Server und Client in .NET zu erstellen und ist von der OPC Foundation als Referenzimplementierung bereitgestellt. Sie bietet eine umfassende API für den Zugriff auf OPC UA-Dienste und -Funktionen. Endress+Hauser verwendet diese Bibliothek auch in anderen Projekten.
+
+2+|**Testing Frameworks**
+
+| xUnit.net
+| Die Bibliothek eignet sich sehr gut zum Schreiben von Unit Tests für .NET. Diese Bibliothek ist eine Erweiterung der .NET Foundation und ist daher quelloffen und findet eine breite Akzeptanz.
+
+| FakeItEasy
+| Ist eine dynamische .NET Fake-Bibliothek zum Erstellen aller Arten von Fake-Objekten, Mocks, Stubs usw. Diese Bibliothek ist quelloffen und findet eine breite Akzeptanz.
+
+| AwesomeAssertions
+| Awesome Assertions bietet einen umfassenden Satz von Erweiterungsmethoden, mit denen Entwickler die erwarteten Ergebnisse von TDD- (Test-Driven Development) und BDD- (Behavior-Driven Development) Unit-Tests in einem natürlichen, lesbaren Stil ausdrücken können. Diese Bibliothek ist quelloffen und findet eine breite Akzeptanz.
+
+2+|**Tools für die Entwicklung**
+
+| Visual Studio 2022
+| Visual Studio ist eine integrierte Entwicklungsumgebung (IDE) von Microsoft die sehr gut geeignet ist für die Programmierung u.a. im .NET Umfeld. Diese Anwendung wird auch bei Endress+Hauser eingesetzt.
+
+| Visual Studio Code
+| Visual Studio Code ist ein quelloffener Quelltext-Editor von Microsoft. Sie eignet sich sehr gut für die Dokumentation und jegliche Aufgaben bei der Entwicklung.
+
+| Azure DevOps
+| Azure DevOps ist ein Dienst für die Planung, Entwicklung und Bereitstellung von Software. Build und Deployment Pipelines sind als YAML Dateien erstellbar und Deployments können einfach über vorgefertigte Tasks durchgeführt werden. Eine automatisierte Bereitstellung der Applikation hilft schnell auf Vorkommnisse reagieren zu können.
+|===
+
+[#sec-Bausteinsicht]
+== Bausteinsicht
+
+=== Ebene 1
+Die APPNAME zerfällt wie in <<fig-BausteinEbene1>> in mehrere Bausteine. Die gestrichelten Linien zeigen die fachlichen Abhängigkeiten der Bausteine auf. Die Kästchen am Rand des Systems zeigen Interaktionspunkte mit aussenstehenden Fremdsystemen.
+
+.APPNAME - Bausteinsicht Ebene 1
+image::assets/APPNAMEBausteinsichtEbene1.drawio.png[id="fig-BausteinEbene1"]
+
+.Überblicke Bausteine der APPNAME
+[cols="30,80", id="tab-BausteinEbene1"]
+|===
+| Baustein | Kurzbeschreibung
+
+| Baustein 1
+| Beschreibung Baustein 1
+
+| Baustein 2
+| Beschreibung Baustein 2
+
+| Log-Engine
+| Das Log-Engine verwendet das in .NET integrierte Logging Framework und die <<appendix_nlog_web>> Bibliothek. Es ist verantwortlich für das Logging der Applikation und Bereitstellung an den notwendigen Quellen wie Logfile, console stdout und weitere. Diese Komponente ist für die Überwachung der Applikation zuständig und ersetzt ein UI.
+|===
+
+== Laufzeitsicht
+[#sec-Laufzeitsicht-wägeablauf]
+=== Ablauf beschreiben
+
+`tbd`
+
+== Verteilungssicht
+In diesem Abschnitt wird die aktuelle Verteilung für Windows 10 und neuer beschrieben. Dies ist die Zielplatzform für die erste Version der Applikation.
+
+Die APPNAME.exe wird als Inno Setup in der Version 6 zur Verfügung gestellt. Zur Erstellung kann ein Template von Endress+Hauser verwendet werden. Eine Einführung dazu wird durch Jens Schwier gegeben. Die Erstellung kann automatisiert über die DevOps Pipeline durchgeführt werden. Im Setup werden die notwendigen Ordner und Dateien auf dem Host erstellt und der Windows Service Registriert. Der Windows Service wird mit dem Benutzer NetworkService Account ausgeführt. Eine Funktionierende appsettings.json wird bei der 1. Installation abgelegt und danach nicht mehr überschrieben. Konfigurationsdateien, logs, usw.. werden im Anwendungsverzeichnis %ProgramData%/APPNAME/ abgelegt. Weitere Konfigurationen werden Manuel durchgeführt und in der Ersten Version nicht über den Setup Wizard anpassbar sein. Das bedeutet das der OPC User vorerst manuell über die CLI nach der 1. Installation hinzugefügt werden muss.
+
+Folgende Artefakte werden ausgeliefert und ermöglichen das Ausführen der Applikation auf einem Windows 10 Computer oder neuer das soweit gepatcht ist das es .NET 8.0 unterstützt.
+
+. Anhand der Installationsanleitung, welche im Source Code GIT Repository als Markdown vorliegt, kann die Applikation konfiguriert und eingerichtet werden.
+. Eine kurze Dokumentation, welche im Source Code GIT Repository als Markdown vorliegt, gibt zudem eine Übersicht über die Funktionsweise der Applikation.
+. Ausführbare Applikation APPNAME.exe als .NET 8 Applikation (self-contained executable für win-x64, also inklusive x64 Runtime dlls) die direkt ausführbar ist
+. Ein Inno Setup V6 wird erstellt zum Installieren und Aktualisieren der Applikation.
+. PowerShell Skript für die Erstellung eines self signed Zertifikats für den OPC-Server. Enthält die Möglichkeit ein Root Zertifikat zu erstellen. Mit diesem können dann die einzelnen Zertifikate für Instanzen individuell mit Parametern zum hostname und/oder Ip-Adresse generiert werden.
+. Neue Applikationsversionen können über eine eigene DevOps Build Pipeline erstellt werden, welche die Installation APPNAME.exe als Artefakt bereitstellt, wenn die Unit Tests erfolgreich sind. Auch das Inno Setup wird in der Pipeline erstellt und bereitgestellt.
+
+[appendix]
+== Glossar
+[horizontal]
+[[IPC]]IPC::
+    Industrial-PC
+
+[[E2E]]E2E-Test::
+    End-to-End-Test
+
+[[ISO8601]]ISO 8601::
+    <<appendix_iso_8601>> ist eine internationale Norm für die Darstellung von Datums- und Zeitangaben. Sie definiert ein standardisiertes Format, das weltweit verwendet wird, um Missverständnisse zu vermeiden.
+
+[[UTC]]UTC::
+    Coordinated Universal Time (UTC) ist die primäre Zeitstandard, nach dem die Welt ihre Uhren und Zeitmessungen ausrichtet. UTC ist nicht an eine bestimmte Zeitzone gebunden und bleibt konstant.
+
+[appendix]
+== Quellenverzeichnis
+
+[bibliography]
+- [[[appendix_iso_8601,ISO 8601]]]: Wikipedia, link:https://en.wikipedia.org/wiki/ISO_8601[https://en.wikipedia.org/wiki/ISO_8601]
+- [[[appendix_net8_supported_linux_distro, .NET 8, Supported Linux Distributions]]]: Github .NET 8, link:https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#linux[https://github.com/dotnet/core/blob/main/release-notes/8.0/supported-os.md#linux]
+
+[appendix]
+== Abbildungsverzeichnis
+list-of::image[]
+
+[appendix]
+== Tabellenverzeichnis
+list-of::table[]
+
+////
+[appendix]
+== Offene Fragen
+[upperroman]
+. Frage ...
+////
