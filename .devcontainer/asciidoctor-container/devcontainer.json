@@ -2,6 +2,9 @@
   "name": "Asciidoctor",
   "context": "../..",
   "dockerFile": "asciidoctor.dockerfile",
+  "build": {
+    "pull": true
+  },
   "customizations": {
     "vscode": {
       "extensions": [
